@@ -13,7 +13,7 @@ function version_lt(){
   test "$(echo "$@" | tr " " "\n" | sort -rV | head -n 1)" != "$1";
 }
 
-#copy from 秋水逸冰 ss scripts
+#copy from yunsoft ss scripts
 if [[ -f /etc/redhat-release ]]; then
   release_os="centos"
 elif cat /etc/issue | grep -Eqi "debian"; then
